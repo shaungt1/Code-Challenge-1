@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ShaunPx1 Code Challenge #1</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <!-- Import template literal and html from scratch component -->
+    <div id="app"></div>
+    <script src="src/index.js"></script>
+
+    <!-- Add javaScript Function to change value -->
+    <script>
+      function changeValue() {
+        var value = parseInt(document.getElementById("number").value, 10);
+        value = isNaN(value) ? 0 : value;
+        value++;
+        document.getElementById("number").value = value;
+      }
+    </script>
+  </body>
+</html>
